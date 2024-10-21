@@ -19,7 +19,7 @@ def load_data(filename):
     y : ndarray
         the labels of each sample.
     """
-    data = read_csv(filename)
+    data = read_csv("data\mnist_data.csv")
     z = np.array(data)
     y = z[:, 0]
     X = z[:, 1:]
